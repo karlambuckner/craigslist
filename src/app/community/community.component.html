@@ -1,0 +1,5 @@
+<h2>community</h2>
+
+<div *ngFor="let list of lists" (click)="goToDetailPage(list)">
+    <h3>{{list.title}}</h3><h5>{{list.subtitle}}</h5>
+</div>
