@@ -1,3 +1,35 @@
-<p>
-  post works!
-</p>
+<h3>Add your posting to Craigslist!</h3>
+
+<h5>Select a category you want to post to</h5>
+<select class="posting" action="index.html" method="post">
+  <option value="community">community</option>
+  <option value="personals">personals</option>
+  <option value="discussion">discussion forum</option>
+  <option value="housing">housing</option>
+  <option value="for">for sale</option>
+  <option value="services">services</option>
+  <option value="jobs">jobs</option>
+  <option value="gigs">gigs</option>
+</select>
+<br>
+<br>
+
+<div class="newPost">
+  <div>
+    <label>Enter Title:</label>
+    <input #newSubtitle>
+    </div>
+  <div>
+    <label>Description:</label>
+    <input #newDescription>
+  </div>
+
+<button class= "btn btn-success"(click)="submitForm(newSubtitle.value, newDescription.value)">Add</button>
+</div>
+
+<h3>Edit Post</h3>
+       <label>Edit Title:</label>
+       <input [(ngModel)]="childSelectedList.title">
+       <label>Edit Description:</label>
+       <input [(ngModel)]="childSelectedList.description">
+        <button class="btn btn-success"(click)="doneButtonClicked()">Done</button>
