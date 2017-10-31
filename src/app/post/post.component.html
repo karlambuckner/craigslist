@@ -1,16 +1,35 @@
-<h3>Add your posting to Craigslist!</h3>
-
-<h5>Select a category you want to post to</h5>
-<select class="posting" action="index.html" method="post">
-  <option value="community">community</option>
-  <option value="personals">personals</option>
-  <option value="discussion">discussion forum</option>
-  <option value="housing">housing</option>
-  <option value="for">for sale</option>
-  <option value="services">services</option>
-  <option value="jobs">jobs</option>
-  <option value="gigs">gigs</option>
-</select>
+<h4>What type of posting is this?</h4>
+<form>
+  <div>
+    <br>
+    <input type="radio" name="post" value="community">
+    <label for= "choice1">community</label>
+    <br>
+    <input type="radio" name="post" value="personals">
+    <label for= "choice2">personals</label>
+    <br>
+    <input type="radio" name="post" value="discussion">
+    <label for= "choice3">discussion forum</label>
+    <br>
+    <input type="radio" name="post" value="housing">
+    <label for= "choice4">housing</label>
+    <br>
+    <input type="radio" name="post" value="for">
+    <label for= "choice5">for sale</label>
+    <br>
+    <input type="radio" name="post" value="services">
+    <label for= "choice6">services</label>
+    <br>
+    <input type="radio" name="post" value="jobs">
+    <label for= "choice7">jobs</label>
+    <br>
+    <input type="radio" name="post" value="gigs">
+    <label for= "choice8">gigs</label>
+    <br>
+    <br>
+    <button type="submit" name="button">continue</button>
+  </div>
+</form>
 <br>
 <br>
 
@@ -18,7 +37,7 @@
   <div>
     <label>Enter Title:</label>
     <input #newSubtitle>
-    </div>
+  </div>
   <div>
     <label>Description:</label>
     <input #newDescription>
@@ -28,8 +47,8 @@
 </div>
 
 <h3>Edit Post</h3>
-       <label>Edit Title:</label>
-       <input [(ngModel)]="childSelectedList.title">
-       <label>Edit Description:</label>
-       <input [(ngModel)]="childSelectedList.description">
-        <button class="btn btn-success"(click)="doneButtonClicked()">Done</button>
+  <label>Edit Title:</label>
+  <input [(ngModel)]="childSelectedList.title">
+  <label>Edit Description:</label>
+  <input [(ngModel)]="childSelectedList.description">
+  <button class="btn btn-success"(click)="doneButtonClicked()">Done</button>

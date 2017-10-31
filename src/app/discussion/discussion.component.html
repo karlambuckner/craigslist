@@ -1,3 +1,5 @@
-<p>
-  discussion works!
-</p>
+<h2>discussion</h2>
+
+<div *ngFor="let list of lists" (click)="goToDetailPage(list)">
+    <h3>{{list.title}}</h3><h4>{{list.subtitle}}</h4><h5>{{list.description}}</h5>
+</div>
